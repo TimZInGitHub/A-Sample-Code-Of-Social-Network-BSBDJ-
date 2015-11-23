@@ -15,6 +15,8 @@
 		22B7779C1C034FE200BA6226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B7779A1C034FE200BA6226 /* LaunchScreen.storyboard */; };
 		22B777A71C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777A61C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_Tests.m */; };
 		22B777B21C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777B11C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_UITests.m */; };
+		22B777C71C0352F500BA6226 /* TZMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777C61C0352F500BA6226 /* TZMainTabBarController.m */; };
+		295E9EB3CD784134EB5319BD /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C799A34B82B1A53881F256 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14C799A34B82B1A53881F256 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B777891C034FE200BA6226 /* A Sample Code Of Social Network (BSBDJ).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A Sample Code Of Social Network (BSBDJ).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B7778D1C034FE200BA6226 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22B7778F1C034FE200BA6226 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		22B777AD1C034FE300BA6226 /* A Sample Code Of Social Network (BSBDJ)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A Sample Code Of Social Network (BSBDJ)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B777B11C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_Sample_Code_Of_Social_Network__BSBDJ_UITests.m; sourceTree = "<group>"; };
 		22B777B31C034FE300BA6226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B777C51C0352F500BA6226 /* TZMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZMainTabBarController.h; path = Other/Controller/TZMainTabBarController.h; sourceTree = "<group>"; };
+		22B777C61C0352F500BA6226 /* TZMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZMainTabBarController.m; path = Other/Controller/TZMainTabBarController.m; sourceTree = "<group>"; };
+		22B777C81C03562600BA6226 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		253A7E0E14DEF4C554C12BA4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		80CA5D1965B8616BD92F12BE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295E9EB3CD784134EB5319BD /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,8 @@
 				22B777A51C034FE300BA6226 /* A Sample Code Of Social Network (BSBDJ)Tests */,
 				22B777B01C034FE300BA6226 /* A Sample Code Of Social Network (BSBDJ)UITests */,
 				22B7778A1C034FE200BA6226 /* Products */,
+				688C89346C7393279CD65C70 /* Pods */,
+				CB930AFE98A8E562C53006A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +112,11 @@
 		22B7778B1C034FE200BA6226 /* A Sample Code Of Social Network (BSBDJ) */ = {
 			isa = PBXGroup;
 			children = (
-				22B7778F1C034FE200BA6226 /* AppDelegate.h */,
-				22B777901C034FE200BA6226 /* AppDelegate.m */,
-				22B777921C034FE200BA6226 /* ViewController.h */,
-				22B777931C034FE200BA6226 /* ViewController.m */,
-				22B777951C034FE200BA6226 /* Main.storyboard */,
-				22B777981C034FE200BA6226 /* Assets.xcassets */,
-				22B7779A1C034FE200BA6226 /* LaunchScreen.storyboard */,
-				22B7779D1C034FE200BA6226 /* Info.plist */,
+				22B777C31C03520300BA6226 /* Essence */,
+				22B777C21C0351F800BA6226 /* New */,
+				22B777C11C0351F500BA6226 /* Follow */,
+				22B777C01C0351F300BA6226 /* Me */,
+				22B777BF1C0351EE00BA6226 /* Other */,
 				22B7778C1C034FE200BA6226 /* Supporting Files */,
 			);
 			path = "A Sample Code Of Social Network (BSBDJ)";
@@ -117,7 +125,16 @@
 		22B7778C1C034FE200BA6226 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22B7778F1C034FE200BA6226 /* AppDelegate.h */,
+				22B777901C034FE200BA6226 /* AppDelegate.m */,
+				22B777921C034FE200BA6226 /* ViewController.h */,
+				22B777931C034FE200BA6226 /* ViewController.m */,
+				22B777951C034FE200BA6226 /* Main.storyboard */,
+				22B777981C034FE200BA6226 /* Assets.xcassets */,
+				22B7779A1C034FE200BA6226 /* LaunchScreen.storyboard */,
+				22B7779D1C034FE200BA6226 /* Info.plist */,
 				22B7778D1C034FE200BA6226 /* main.m */,
+				22B777C81C03562600BA6226 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +157,68 @@
 			path = "A Sample Code Of Social Network (BSBDJ)UITests";
 			sourceTree = "<group>";
 		};
+		22B777BF1C0351EE00BA6226 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				22B777C41C03525300BA6226 /* Controller */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		22B777C01C0351F300BA6226 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		22B777C11C0351F500BA6226 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Follow;
+			sourceTree = "<group>";
+		};
+		22B777C21C0351F800BA6226 /* New */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		22B777C31C03520300BA6226 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Essence;
+			sourceTree = "<group>";
+		};
+		22B777C41C03525300BA6226 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22B777C51C0352F500BA6226 /* TZMainTabBarController.h */,
+				22B777C61C0352F500BA6226 /* TZMainTabBarController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		688C89346C7393279CD65C70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80CA5D1965B8616BD92F12BE /* Pods.debug.xcconfig */,
+				253A7E0E14DEF4C554C12BA4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB930AFE98A8E562C53006A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C799A34B82B1A53881F256 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22B777B61C034FE300BA6226 /* Build configuration list for PBXNativeTarget "A Sample Code Of Social Network (BSBDJ)" */;
 			buildPhases = (
+				96D804D8B6373B817DCE5429 /* Check Pods Manifest.lock */,
 				22B777851C034FE200BA6226 /* Sources */,
 				22B777861C034FE200BA6226 /* Frameworks */,
 				22B777871C034FE200BA6226 /* Resources */,
+				F12ECB62120EB26992A99A0B /* Embed Pods Frameworks */,
+				648BBB207C82F1E31719EE9D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +284,7 @@
 		22B777811C034FE200BA6226 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TZ;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Tim.Z;
 				TargetAttributes = {
@@ -268,6 +351,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		648BBB207C82F1E31719EE9D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96D804D8B6373B817DCE5429 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F12ECB62120EB26992A99A0B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22B777851C034FE200BA6226 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +406,7 @@
 			files = (
 				22B777941C034FE200BA6226 /* ViewController.m in Sources */,
 				22B777911C034FE200BA6226 /* AppDelegate.m in Sources */,
+				22B777C71C0352F500BA6226 /* TZMainTabBarController.m in Sources */,
 				22B7778E1C034FE200BA6226 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,8 +546,11 @@
 		};
 		22B777B71C034FE300BA6226 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80CA5D1965B8616BD92F12BE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PREFIX_HEADER = "/Users/Tim/Desktop/Yonghuai_Z/项目/ZYH--001/A Sample Code Of Social Network (BSBDJ)/A Sample Code Of Social Network (BSBDJ)/PrefixHeader.pch";
 				INFOPLIST_FILE = "A Sample Code Of Social Network (BSBDJ)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TimZInGitHub.A-Sample-Code-Of-Social-Network--BSBDJ-";
@@ -425,8 +560,11 @@
 		};
 		22B777B81C034FE300BA6226 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253A7E0E14DEF4C554C12BA4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PREFIX_HEADER = "/Users/Tim/Desktop/Yonghuai_Z/项目/ZYH--001/A Sample Code Of Social Network (BSBDJ)/A Sample Code Of Social Network (BSBDJ)/PrefixHeader.pch";
 				INFOPLIST_FILE = "A Sample Code Of Social Network (BSBDJ)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TimZInGitHub.A-Sample-Code-Of-Social-Network--BSBDJ-";
@@ -501,6 +639,7 @@
 				22B777B81C034FE300BA6226 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22B777B91C034FE300BA6226 /* Build configuration list for PBXNativeTarget "A Sample Code Of Social Network (BSBDJ)Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +648,7 @@
 				22B777BB1C034FE300BA6226 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22B777BC1C034FE300BA6226 /* Build configuration list for PBXNativeTarget "A Sample Code Of Social Network (BSBDJ)UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +657,7 @@
 				22B777BE1C034FE300BA6226 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

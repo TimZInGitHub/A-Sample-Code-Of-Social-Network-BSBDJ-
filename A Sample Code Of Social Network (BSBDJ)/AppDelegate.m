@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TZMainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,29 @@
 
 @implementation AppDelegate
 
+/**
+ *  开始架构应用框架
+ 
+ 自定义应用框架时 我一般 1(修改Launch Images Source -> BrandAsset)
+                      2(Launch Screen File -> nil)
+                      3(Main Interface     -> nil)
 
+
+ */
+
+/**
+*  设置根控制器
+*/
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    self.window.rootViewController = [[TZMainTabBarController alloc] init];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
