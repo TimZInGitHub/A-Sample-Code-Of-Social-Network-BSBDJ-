@@ -1,14 +1,14 @@
 //
-//  TZMainTabBarController.h
+//  TZLoginRegisterVC.h
 //  A Sample Code Of Social Network (BSBDJ)
 //
-//  Created by Tim.Z on 11/23/15.
+//  Created by Tim.Z on 11/24/15.
 //  Copyright © 2015 Tim.Z. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface TZMainTabBarController  : UITabBarController
+@interface TZLoginRegisterVC : UIViewController
 
 @property (nonatomic, strong) RACSubject *delegateSignal;
 

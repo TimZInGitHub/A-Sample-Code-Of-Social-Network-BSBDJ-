@@ -8,6 +8,7 @@
 
 #import "TZLoginRegisterViewController.h"
 
+
 @interface TZLoginRegisterViewController ()
 
 @end
@@ -22,6 +23,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)loginRegister
+{
+    [self dismissViewControllerAnimated:NO completion:nil];
+    
+    if (self.delegateSignal2) {
+        [self.delegateSignal2 sendNext:nil];
+    }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

@@ -14,6 +14,7 @@
 #import "TZFollowViewController.h"
 #import "TZMeViewController.h"
 #import "TZLoginRegisterViewController.h"
+#import "TZLoginRegisterVC.h"
 
 #import "TZTabBar.h"
 
@@ -44,18 +45,24 @@ typedef NS_ENUM(NSUInteger, TZTabBarIndex) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    /**** 更换TabBar ****/
     [self setupTabBar];
+    /**** 设置所有UITabBarItem的文字属性 ****/
     [self setUpItemTitleAttributes];
+    /**** 添加子控制器 ****/
     [self setUpChildViewController];
 #warning change
     self.loggedIn = NO;
     
-    [self setSelectedIndex:0];
+    self.delegate = self;
     
-//    self.delegate = self;
+        //设置起始页面
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self setSelectedViewController:self.viewControllers[TZTabBarIndexFollow]];
+    });
     
-//    [self presentLoinRegisterVC];
+    //    [self presentLoinRegisterVC];
     
 //    [self delegateSignal];
 }
@@ -77,10 +84,12 @@ typedef NS_ENUM(NSUInteger, TZTabBarIndex) {
 - (void)setUpItemTitleAttributes
 {
     UITabBarItem *item = [UITabBarItem appearance];
+    // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
     normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
     normalAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
     selectedAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
@@ -166,19 +175,35 @@ typedef NS_ENUM(NSUInteger, TZTabBarIndex) {
 
 - (void)setSelectedViewController:(__kindof UIViewController *)selectedViewController
 {
-    if (selectedViewController == self.viewControllers[TZTabBarIndexFollow]) {
-        TZLoginRegisterViewController *loginRVC = [[TZLoginRegisterViewController alloc] init];
-        loginRVC.view.backgroundColor = TZCommonBackgroundColor;
-        [self presentViewController:loginRVC animated:YES completion:nil];
-        
-//        selectedViewController = self.viewControllers[TZTabBarIndexEssence];//没用!
-//        [self setSelectedViewController:self.viewControllers[TZTabBarIndexEssence]];//没用!
-        loginRVC.delegateSignal = [RACSubject subject];
-        [loginRVC.delegateSignal subscribeNext:^(id x) {
-            [self setSelectedViewController:self.viewControllers[TZTabBarIndexEssence]];
-        }] ;
+    if (self.isLoggedIn == NO) {
+        if (selectedViewController == self.viewControllers[TZTabBarIndexFollow]) {
+            TZLoginRegisterViewController *loginRVC = [[TZLoginRegisterViewController alloc] init];
+            loginRVC.view.backgroundColor = TZCommonBackgroundColor;
+            [self presentViewController:loginRVC animated:YES completion:nil];
+            
+                //        selectedViewController = self.viewControllers[TZTabBarIndexEssence];//没用!
+                //        [self setSelectedViewController:self.viewControllers[TZTabBarIndexEssence]];//没用!
+            
+            loginRVC.delegateSignal = [RACSubject subject];
+            [loginRVC.delegateSignal subscribeNext:^(id x) {
+                [self setSelectedViewController:self.viewControllers[TZTabBarIndexEssence]];
+            }] ;
+            loginRVC.delegateSignal2 = [RACSubject subject];
+            [loginRVC.delegateSignal2 subscribeNext:^(id x) {
+                TZLoginRegisterVC *loginRVC2 = [[TZLoginRegisterVC alloc] init];
+                loginRVC2.view.backgroundColor = TZCommonBackgroundColor;
+                
+                [self presentViewController:loginRVC2 animated:YES completion:nil];
+                
+                loginRVC2.delegateSignal = [RACSubject subject];
+                [loginRVC2.delegateSignal subscribeNext:^(id x) {
+                    if (self.isLoggedIn == NO) {
+                        [self setSelectedViewController:self.viewControllers[TZTabBarIndexEssence]];
+                    }
+                }];
+            }] ;
+        }
     }
-    
     [super setSelectedViewController:selectedViewController];
     
 }
@@ -186,13 +211,18 @@ typedef NS_ENUM(NSUInteger, TZTabBarIndex) {
 //#pragma mark - <UITabBarControllerDelegate>
 ///**
 // *  记得要设置代理!!!!!!
+//    貌似在代理方法中才能执行 setSelectedIndex: 有待查文档验证!!!!
 // */
 //- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 //{
 //    if (self.isLoggedIn == NO) {
 //        if ([viewController.childViewControllers[0] isKindOfClass:[TZFollowViewController class]]) {
 //            TZFUNC
-//            
+//            TZLoginRegisterViewController *loginRVC = [[TZLoginRegisterViewController alloc] init];
+//            loginRVC.view.backgroundColor = TZCommonBackgroundColor;
+//            [self presentViewController:loginRVC animated:YES completion:nil];
+//            [tabBarController setSelectedIndex:0];
+//
 //        }
 //    }
 //}

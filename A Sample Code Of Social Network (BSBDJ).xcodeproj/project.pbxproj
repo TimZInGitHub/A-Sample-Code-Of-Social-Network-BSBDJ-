@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		226435351C03F85B00F92B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226435331C03F85B00F92B79 /* LaunchScreen.storyboard */; };
+		226435391C03FC9800F92B79 /* TZLoginRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 226435371C03FC9800F92B79 /* TZLoginRegisterVC.m */; };
+		2264353A1C03FC9800F92B79 /* TZLoginRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226435381C03FC9800F92B79 /* TZLoginRegisterVC.xib */; };
+		2264353D1C0404CA00F92B79 /* TZLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264353C1C0404CA00F92B79 /* TZLoginRegisterTextField.m */; };
+		226435401C04070F00F92B79 /* TZQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264353F1C04070F00F92B79 /* TZQuickLoginButton.m */; };
 		22B7778E1C034FE200BA6226 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7778D1C034FE200BA6226 /* main.m */; };
 		22B777911C034FE200BA6226 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777901C034FE200BA6226 /* AppDelegate.m */; };
-		22B777941C034FE200BA6226 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777931C034FE200BA6226 /* ViewController.m */; };
-		22B777971C034FE200BA6226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B777951C034FE200BA6226 /* Main.storyboard */; };
 		22B777991C034FE200BA6226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B777981C034FE200BA6226 /* Assets.xcassets */; };
-		22B7779C1C034FE200BA6226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B7779A1C034FE200BA6226 /* LaunchScreen.storyboard */; };
 		22B777A71C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777A61C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_Tests.m */; };
 		22B777B21C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777B11C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_UITests.m */; };
 		22B777C71C0352F500BA6226 /* TZMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B777C61C0352F500BA6226 /* TZMainTabBarController.m */; };
@@ -52,15 +54,19 @@
 
 /* Begin PBXFileReference section */
 		14C799A34B82B1A53881F256 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		226435341C03F85B00F92B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		226435361C03FC9800F92B79 /* TZLoginRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZLoginRegisterVC.h; path = Other/Controller/Login/TZLoginRegisterVC.h; sourceTree = "<group>"; };
+		226435371C03FC9800F92B79 /* TZLoginRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZLoginRegisterVC.m; path = Other/Controller/Login/TZLoginRegisterVC.m; sourceTree = "<group>"; };
+		226435381C03FC9800F92B79 /* TZLoginRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TZLoginRegisterVC.xib; path = Other/Controller/Login/TZLoginRegisterVC.xib; sourceTree = "<group>"; };
+		2264353B1C0404CA00F92B79 /* TZLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLoginRegisterTextField.h; sourceTree = "<group>"; };
+		2264353C1C0404CA00F92B79 /* TZLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLoginRegisterTextField.m; sourceTree = "<group>"; };
+		2264353E1C04070F00F92B79 /* TZQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZQuickLoginButton.h; sourceTree = "<group>"; };
+		2264353F1C04070F00F92B79 /* TZQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZQuickLoginButton.m; sourceTree = "<group>"; };
 		22B777891C034FE200BA6226 /* A Sample Code Of Social Network (BSBDJ).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A Sample Code Of Social Network (BSBDJ).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B7778D1C034FE200BA6226 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22B7778F1C034FE200BA6226 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22B777901C034FE200BA6226 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		22B777921C034FE200BA6226 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		22B777931C034FE200BA6226 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		22B777961C034FE200BA6226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22B777981C034FE200BA6226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22B7779B1C034FE200BA6226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B7779D1C034FE200BA6226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B777A21C034FE300BA6226 /* A Sample Code Of Social Network (BSBDJ)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A Sample Code Of Social Network (BSBDJ)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B777A61C034FE300BA6226 /* A_Sample_Code_Of_Social_Network__BSBDJ_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_Sample_Code_Of_Social_Network__BSBDJ_Tests.m; sourceTree = "<group>"; };
@@ -168,11 +174,8 @@
 			children = (
 				22B7778F1C034FE200BA6226 /* AppDelegate.h */,
 				22B777901C034FE200BA6226 /* AppDelegate.m */,
-				22B777921C034FE200BA6226 /* ViewController.h */,
-				22B777931C034FE200BA6226 /* ViewController.m */,
-				22B777951C034FE200BA6226 /* Main.storyboard */,
+				226435331C03F85B00F92B79 /* LaunchScreen.storyboard */,
 				22B777981C034FE200BA6226 /* Assets.xcassets */,
-				22B7779A1C034FE200BA6226 /* LaunchScreen.storyboard */,
 				22B7779D1C034FE200BA6226 /* Info.plist */,
 				22B7778D1C034FE200BA6226 /* main.m */,
 				22B777C81C03562600BA6226 /* PrefixHeader.pch */,
@@ -285,6 +288,10 @@
 			children = (
 				22B777DE1C035C4400BA6226 /* TZTabBar.h */,
 				22B777DF1C035C4400BA6226 /* TZTabBar.m */,
+				2264353B1C0404CA00F92B79 /* TZLoginRegisterTextField.h */,
+				2264353C1C0404CA00F92B79 /* TZLoginRegisterTextField.m */,
+				2264353E1C04070F00F92B79 /* TZQuickLoginButton.h */,
+				2264353F1C04070F00F92B79 /* TZQuickLoginButton.m */,
 			);
 			name = View;
 			path = Other/View;
@@ -400,6 +407,9 @@
 				22B778001C03648B00BA6226 /* TZLoginRegisterViewController.h */,
 				22B778011C03648B00BA6226 /* TZLoginRegisterViewController.m */,
 				22B778021C03648B00BA6226 /* TZLoginRegisterViewController.xib */,
+				226435361C03FC9800F92B79 /* TZLoginRegisterVC.h */,
+				226435371C03FC9800F92B79 /* TZLoginRegisterVC.m */,
+				226435381C03FC9800F92B79 /* TZLoginRegisterVC.xib */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -531,10 +541,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B7779C1C034FE200BA6226 /* LaunchScreen.storyboard in Resources */,
+				226435351C03F85B00F92B79 /* LaunchScreen.storyboard in Resources */,
 				22B777991C034FE200BA6226 /* Assets.xcassets in Resources */,
-				22B777971C034FE200BA6226 /* Main.storyboard in Resources */,
 				22B778041C03648B00BA6226 /* TZLoginRegisterViewController.xib in Resources */,
+				2264353A1C03FC9800F92B79 /* TZLoginRegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,12 +622,14 @@
 				22B777D91C035B6200BA6226 /* UINavigationItem+TZExtension.m in Sources */,
 				22B777F81C035EF600BA6226 /* TZNewViewController.m in Sources */,
 				22B777DC1C035B6200BA6226 /* UIView+TZCoordinateExtension.m in Sources */,
-				22B777941C034FE200BA6226 /* ViewController.m in Sources */,
 				22B777DB1C035B6200BA6226 /* UITextField+TZExtension.m in Sources */,
+				2264353D1C0404CA00F92B79 /* TZLoginRegisterTextField.m in Sources */,
 				22B777D81C035B6200BA6226 /* UIBarButtonItem+TZExtension.m in Sources */,
 				22B777DA1C035B6200BA6226 /* UITabBarItem+TZExtension.m in Sources */,
 				22B777FB1C035F2800BA6226 /* TZFollowViewController.m in Sources */,
+				226435391C03FC9800F92B79 /* TZLoginRegisterVC.m in Sources */,
 				22B777911C034FE200BA6226 /* AppDelegate.m in Sources */,
+				226435401C04070F00F92B79 /* TZQuickLoginButton.m in Sources */,
 				22B777E31C035DE700BA6226 /* TZNavigationController.m in Sources */,
 				22B777C71C0352F500BA6226 /* TZMainTabBarController.m in Sources */,
 				22B778031C03648B00BA6226 /* TZLoginRegisterViewController.m in Sources */,
@@ -659,18 +671,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22B777951C034FE200BA6226 /* Main.storyboard */ = {
+		226435331C03F85B00F92B79 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				22B777961C034FE200BA6226 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		22B7779A1C034FE200BA6226 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22B7779B1C034FE200BA6226 /* Base */,
+				226435341C03F85B00F92B79 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -765,9 +769,10 @@
 			baseConfigurationReference = 80CA5D1965B8616BD92F12BE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "/Users/Tim/Desktop/Yonghuai_Z/项目/ZYH--001/A Sample Code Of Social Network (BSBDJ)/A Sample Code Of Social Network (BSBDJ)/PrefixHeader.pch";
 				INFOPLIST_FILE = "A Sample Code Of Social Network (BSBDJ)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TimZInGitHub.A-Sample-Code-Of-Social-Network--BSBDJ-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -779,9 +784,10 @@
 			baseConfigurationReference = 253A7E0E14DEF4C554C12BA4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "/Users/Tim/Desktop/Yonghuai_Z/项目/ZYH--001/A Sample Code Of Social Network (BSBDJ)/A Sample Code Of Social Network (BSBDJ)/PrefixHeader.pch";
 				INFOPLIST_FILE = "A Sample Code Of Social Network (BSBDJ)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TimZInGitHub.A-Sample-Code-Of-Social-Network--BSBDJ-";
 				PRODUCT_NAME = "$(TARGET_NAME)";

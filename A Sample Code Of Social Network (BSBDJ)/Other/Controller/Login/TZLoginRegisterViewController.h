@@ -11,5 +11,6 @@
 @interface TZLoginRegisterViewController : UIViewController
 
 @property (nonatomic, strong) RACSubject *delegateSignal;
+@property (nonatomic, strong) RACSubject *delegateSignal2;
 
 @end

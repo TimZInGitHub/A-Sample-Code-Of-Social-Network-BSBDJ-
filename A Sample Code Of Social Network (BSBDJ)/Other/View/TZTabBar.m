@@ -11,7 +11,7 @@
 
 
 @interface TZTabBar ()
-
+/** 中间的发布按钮 */
 @property (nonatomic, weak) UIButton *publishButton;
 
 @end
@@ -27,6 +27,7 @@
 }
 
 #pragma mark - lazyloading
+/** 发布按钮 */
 - (UIButton *)publishButton
 {
     if (_publishButton == nil) {
@@ -38,8 +39,6 @@
         [self addSubview:publishButton];
         
         _publishButton = publishButton;
-        
-        TZFUNC;
     }
     return _publishButton;
 }
@@ -53,10 +52,13 @@
     return self;
 }
 
+/**
+ *  布局子控件
+ */
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
+    /**** 按钮的尺寸 ****/
     CGFloat buttonW = self.tz_width / 5;
     CGFloat buttonH = self.tz_height;
     
@@ -65,10 +67,11 @@
     int taBarButtonIndex = 0;
     
     for (UIView *subview in self.subviews) {
+        // 过滤掉非UITabBarButton
         if (subview.class != NSClassFromString(@"UITabBarButton")) continue;
         
         CGFloat tabBarButtonX = taBarButtonIndex * buttonW;
-        if (taBarButtonIndex > 1) {
+        if (taBarButtonIndex > 1) {// 右边的2个UITabBarButton
             tabBarButtonX += buttonW;
         }
         subview.frame = CGRectMake(tabBarButtonX, tabBarButtonY, buttonW, buttonH);
@@ -76,7 +79,7 @@
         taBarButtonIndex++;
     }
     
-    
+    /**** 设置中间的发布按钮的frame ****/
     self.publishButton.tzMakeWidth(buttonW).tzMakeHeight(buttonH).tzMakeCenterX(self.tz_width * 0.5).tzMakeCenterY(self.tz_height *  0.5);
 }
 
